@@ -1,4 +1,3 @@
-```markdown
 # 🛡️ CYBER SHIELD — Your Digital Bodyguard
 **Detect • Protect • Prevent**
 
@@ -32,8 +31,6 @@ Cyber Shield is an interactive, AI-inspired cybersecurity defense simulator and 
    ```bash
    git clone [https://github.com/your-username/cyber-shield.git](https://github.com/your-username/cyber-shield.git)
    cd cyber-shield
-
-```
 
 2. **Create and activate a virtual environment (recommended)**
 ```bash
