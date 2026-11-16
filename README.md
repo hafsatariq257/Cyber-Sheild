@@ -1,11 +1,11 @@
-# 🛡️ CYBER SHIELD — Your Digital Bodyguard
+#  CYBER SHIELD — Your Digital Bodyguard
 **Detect • Protect • Prevent**
 
 Cyber Shield is an interactive, AI-inspired cybersecurity defense simulator and educational dashboard built with Python and Streamlit. Engineered for real-time threat awareness, it enables users to scan suspicious messages, inspect deceptive URLs, evaluate password resilience against brute-force attacks, and check inbox emails for spoofing or spam indicators—all with a strict zero-data-storage privacy policy.
 
 ---
 
-## ✨ Key Features & Security Checkpoints
+## Key Features & Security Checkpoints
 
 * **Introductory Command Landing Page:** Features a dark cyber-crimson interface with an animated SVG Cyber-Sentinel backdrop, floating background nodes, and module overview before launching into the interactive dashboard.
 * **Checkpoint 01 — Phishing & Scam Message Analyzer:** Scans SMS, WhatsApp, and text payloads for unrealistic prize bait, high-pressure urgency triggers, and suspicious link/credential requests, generating a live `0–100` Threat Risk Score.
@@ -16,7 +16,7 @@ Cyber Shield is an interactive, AI-inspired cybersecurity defense simulator and 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Language:** Python 3.8+
 * **Web Framework:** Streamlit
@@ -25,7 +25,7 @@ Cyber Shield is an interactive, AI-inspired cybersecurity defense simulator and 
 
 ---
 
-## 🚀 Installation & Local Setup
+##  Installation & Local Setup
 
 1. **Clone or download the repository**
    ```bash
@@ -60,7 +60,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 cyber-shield/
@@ -71,7 +71,7 @@ cyber-shield/
 
 ---
 
-## 🔒 Privacy & Security Disclaimer
+##  Privacy & Security Disclaimer
 
 Cyber Shield operates entirely in-memory during your active browser session. **Zero personal messages, URLs, emails, or test passwords are saved, logged, or transmitted to external servers.** This tool is designed for cybersecurity education, awareness training, and real-time threat simulation.
 
