@@ -129,22 +129,22 @@ header[data-testid="stHeader"] {
     box-shadow: 0 0 30px rgba(239, 68, 68, .55), 0 14px 35px rgba(0, 0, 0, .75);
 }
 .mod-tag {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 900;
-    letter-spacing: 1.8px;
+    letter-spacing: 2px;
     color: #ff6b7d;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .mod-title {
     color: #ffffff;
-    font-size: 1.4rem;
-    font-weight: 800;
-    margin: 0 0 8px 0;
+    font-size: 1.55rem;
+    font-weight: 900;
+    margin: 0 0 10px 0;
 }
 .mod-desc {
     color: #f1f5f9;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.55;
     margin: 0;
 }
@@ -261,6 +261,7 @@ header[data-testid="stHeader"] {
     box-shadow: 0 0 15px rgba(239, 68, 68, 0.4) !important;
 }
 
+/* ENLARGED BUTTON FONTS FOR LAUNCH & NAVIGATION BUTTONS */
 div.stButton > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primaryFormSubmit"] {
@@ -268,10 +269,10 @@ div[data-testid="stFormSubmitButton"] > button[kind="primaryFormSubmit"] {
     color: #ffffff !important;
     border: none !important;
     border-radius: 10px !important;
-    padding: 0.9rem 1.6rem !important;
-    font-size: 1.15rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 0.5px !important;
+    padding: 1rem 1.8rem !important;
+    font-size: 1.25rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
     box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5) !important;
     transition: all 0.2s ease !important;
 }
@@ -285,9 +286,10 @@ div.stButton > button[kind="secondary"] {
     color: #ffffff !important;
     border: 1px solid rgba(248, 113, 113, 0.45) !important;
     border-radius: 10px !important;
-    padding: 0.9rem 1.4rem !important;
-    font-size: 1.1rem !important;
-    font-weight: 700 !important;
+    padding: 1rem 1.4rem !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
 }
 div.stButton > button[kind="secondary"]:hover {
     border-color: #ef4444 !important;
@@ -373,7 +375,7 @@ div.stButton > button[kind="secondary"]:hover {
 """, unsafe_allow_html=True)
 
 # ---------------------------------------------------------
-# LANDING PAGE EXTRA CSS & BG STYLING (HUGE FONT ENHANCEMENTS)
+# LANDING PAGE EXTRA CSS & BG STYLING
 # ---------------------------------------------------------
 st.markdown("""
 <style>
@@ -400,7 +402,6 @@ st.markdown("""
 }
 .L-left { flex: 1 1 520px; max-width: 680px; }
 
-/* MUCH BIGGER LOCK-STYLE GLOWING CAPSULE BADGES */
 .cyber-badge-box {
     display: inline-flex;
     align-items: center;
@@ -419,7 +420,6 @@ st.markdown("""
 }
 @keyframes badgePulse { 0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,.55);} 50% { box-shadow: 0 0 0 12px rgba(239,68,68,0);} }
 
-/* HUGE PHISHTRACE TITLE */
 .L-title {
     font-size: 5.5rem;
     font-weight: 900;
@@ -435,7 +435,6 @@ st.markdown("""
 }
 @keyframes shimmer { to { background-position: 200% center; } }
 
-/* HUGE SUBTITLE / MULTICHANNEL PHISHING DETECTION */
 .L-pick {
     font-size: 1.95rem;
     font-weight: 900;
@@ -446,19 +445,6 @@ st.markdown("""
     text-shadow: 0 0 28px rgba(239, 68, 68, 0.9);
 }
 
-.L-pick2 {
-    font-size: 1.4rem;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 4px;
-    margin-bottom: 1.4rem;
-}
-.L-pick2 span { display: inline-block; animation: wordPop 3s ease-in-out infinite; }
-.L-pick2 span:nth-child(2) { animation-delay: .5s; }
-.L-pick2 span:nth-child(3) { animation-delay: 1s; }
-@keyframes wordPop { 0%,100% { color:#ffffff; transform: translateY(0);} 50% { color:#ff4d6d; transform: translateY(-5px);} }
-
-/* MUCH BIGGER INTRO PARAGRAPH */
 .L-desc {
     color: #f8fafc;
     font-size: 1.3rem;
@@ -690,7 +676,6 @@ st.markdown("""
     }
     .L-title { font-size: 3.5rem; }
     .L-pick { font-size: 1.4rem; letter-spacing: 1px; }
-    .L-pick2 { font-size: 1.1rem; letter-spacing: 2px; }
     .L-desc { font-size: 1.1rem; }
     .L-right { min-height: 340px; }
     .L-robot { width: 240px; }
@@ -703,12 +688,6 @@ st.markdown("""
     .hero-title { font-size: 2.4rem; }
     .hero-accent { font-size: 1.3rem; }
     .hero-right { min-width: 100%; }
-    div.stButton > button[kind="primary"],
-    div.stButton > button[kind="secondary"] {
-        font-size: 1.15rem !important;
-        padding: 0.95rem 1.2rem !important;
-        margin-bottom: 0.35rem !important;
-    }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -836,7 +815,6 @@ if st.session_state["page"] == "landing":
     )
     st.markdown(bg_extra, unsafe_allow_html=True)
 
-    # Hero section with much larger text sizes inside lock-style capsule badge boxes
     hero_html = (
         '<div class="L-hero">'
         '<div class="L-left">'
