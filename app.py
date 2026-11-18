@@ -41,7 +41,7 @@ def img64(name: str) -> str:
 
 
 # ---------------------------------------------------------
-# CUSTOM CYBER-CRIMSON UI CSS (MAXIMUM FONT SIZE & BOLDNESS)
+# CUSTOM CYBER-CRIMSON UI CSS (FORCE HUGE BUTTON FONTS)
 # ---------------------------------------------------------
 st.markdown("""
 <style>
@@ -114,7 +114,6 @@ header[data-testid="stHeader"] {
     animation: pulseVisor 2.8s ease-in-out infinite;
 }
 
-/* ENLARGED MODULE CARDS */
 .feature-card-ui {
     background: rgba(22, 7, 10, 0.94);
     border: 1px solid rgba(248, 113, 113, 0.55);
@@ -265,7 +264,19 @@ header[data-testid="stHeader"] {
     box-shadow: 0 0 15px rgba(239, 68, 68, 0.4) !important;
 }
 
-/* MASSIVE & BOLD BUTTONS */
+/* FORCED MASSIVE BUTTON & INNER TEXT STYLING */
+div.stButton > button,
+div.stButton > button p,
+div.stButton > button div,
+div.stButton > button span,
+div[data-testid="stFormSubmitButton"] > button,
+div[data-testid="stFormSubmitButton"] > button p,
+div[data-testid="stFormSubmitButton"] > button div,
+div[data-testid="stFormSubmitButton"] > button span {
+    font-size: 1.35rem !important;
+    font-weight: 900 !important;
+}
+
 div.stButton > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primaryFormSubmit"] {
@@ -273,9 +284,7 @@ div[data-testid="stFormSubmitButton"] > button[kind="primaryFormSubmit"] {
     color: #ffffff !important;
     border: none !important;
     border-radius: 12px !important;
-    padding: 1.1rem 2rem !important;
-    font-size: 1.4rem !important;
-    font-weight: 900 !important;
+    padding: 1.2rem 2rem !important;
     letter-spacing: 1.2px !important;
     box-shadow: 0 8px 25px rgba(225, 29, 72, 0.6) !important;
     transition: all 0.2s ease !important;
@@ -288,11 +297,9 @@ div.stButton > button[kind="primary"]:hover {
 div.stButton > button[kind="secondary"] {
     background: rgba(255, 255, 255, 0.08) !important;
     color: #ffffff !important;
-    border: 1px solid rgba(248, 113, 113, 0.5) !important;
+    border: 1.5px solid rgba(248, 113, 113, 0.55) !important;
     border-radius: 12px !important;
-    padding: 1.1rem 1.6rem !important;
-    font-size: 1.3rem !important;
-    font-weight: 900 !important;
+    padding: 1.2rem 1.6rem !important;
     letter-spacing: 0.8px !important;
 }
 div.stButton > button[kind="secondary"]:hover {
