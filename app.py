@@ -41,7 +41,7 @@ def img64(name: str) -> str:
 
 
 # ---------------------------------------------------------
-# CUSTOM CYBER-CRIMSON UI CSS
+# CUSTOM CYBER-CRIMSON UI CSS (MAXIMUM FONT SIZE & BOLDNESS)
 # ---------------------------------------------------------
 st.markdown("""
 <style>
@@ -114,12 +114,13 @@ header[data-testid="stHeader"] {
     animation: pulseVisor 2.8s ease-in-out infinite;
 }
 
+/* ENLARGED MODULE CARDS */
 .feature-card-ui {
     background: rgba(22, 7, 10, 0.94);
     border: 1px solid rgba(248, 113, 113, 0.55);
     border-top: 4px solid #ef4444;
     border-radius: 14px;
-    padding: 1.6rem 1.4rem;
+    padding: 1.8rem 1.6rem;
     height: 100%;
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.75);
     transition: transform .25s ease, box-shadow .25s ease;
@@ -129,7 +130,7 @@ header[data-testid="stHeader"] {
     box-shadow: 0 0 30px rgba(239, 68, 68, .55), 0 14px 35px rgba(0, 0, 0, .75);
 }
 .mod-tag {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 900;
     letter-spacing: 2px;
     color: #ff6b7d;
@@ -138,14 +139,15 @@ header[data-testid="stHeader"] {
 }
 .mod-title {
     color: #ffffff;
-    font-size: 1.55rem;
+    font-size: 1.7rem;
     font-weight: 900;
     margin: 0 0 10px 0;
 }
 .mod-desc {
     color: #f1f5f9;
-    font-size: 1.1rem;
-    line-height: 1.55;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -195,22 +197,23 @@ header[data-testid="stHeader"] {
     max-width: 560px;
 }
 .hero-title {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-weight: 900;
     line-height: 1.1;
     color: #ffffff;
     margin-bottom: 0.4rem;
 }
 .hero-accent {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.6rem;
+    font-weight: 900;
     color: #ff5a6e;
     margin-bottom: 0.8rem;
     letter-spacing: 0.5px;
 }
 .hero-sub {
     color: #f1f5f9;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    font-weight: 700;
     line-height: 1.6;
 }
 
@@ -225,27 +228,27 @@ header[data-testid="stHeader"] {
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-left: 4px solid #ef4444;
-    padding: 1.1rem 1.3rem;
+    padding: 1.2rem 1.4rem;
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 .glass-card-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     color: #fecaca;
-    font-weight: 800;
+    font-weight: 900;
 }
 .glass-card-value {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 900;
     color: #ffffff;
     margin-top: 3px;
 }
 .glass-card-sub {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #e2e8f0;
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 2px;
 }
 
@@ -254,114 +257,116 @@ header[data-testid="stHeader"] {
     color: #ffffff !important;
     border: 1px solid rgba(248, 113, 113, 0.55) !important;
     border-radius: 10px !important;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
 }
 .stTextArea textarea:focus, .stTextInput input:focus {
     border-color: #ef4444 !important;
     box-shadow: 0 0 15px rgba(239, 68, 68, 0.4) !important;
 }
 
-/* ENLARGED BUTTON FONTS FOR LAUNCH & NAVIGATION BUTTONS */
+/* MASSIVE & BOLD BUTTONS */
 div.stButton > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primary"],
 div[data-testid="stFormSubmitButton"] > button[kind="primaryFormSubmit"] {
     background: linear-gradient(90deg, #e11d48 0%, #991b1b 100%) !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 10px !important;
-    padding: 1rem 1.8rem !important;
-    font-size: 1.25rem !important;
+    border-radius: 12px !important;
+    padding: 1.1rem 2rem !important;
+    font-size: 1.4rem !important;
     font-weight: 900 !important;
-    letter-spacing: 1px !important;
-    box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5) !important;
+    letter-spacing: 1.2px !important;
+    box-shadow: 0 8px 25px rgba(225, 29, 72, 0.6) !important;
     transition: all 0.2s ease !important;
 }
 div.stButton > button[kind="primary"]:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(225, 29, 72, 0.75) !important;
+    box-shadow: 0 12px 32px rgba(225, 29, 72, 0.85) !important;
 }
 
 div.stButton > button[kind="secondary"] {
     background: rgba(255, 255, 255, 0.08) !important;
     color: #ffffff !important;
-    border: 1px solid rgba(248, 113, 113, 0.45) !important;
-    border-radius: 10px !important;
-    padding: 1rem 1.4rem !important;
-    font-size: 1.2rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 0.5px !important;
+    border: 1px solid rgba(248, 113, 113, 0.5) !important;
+    border-radius: 12px !important;
+    padding: 1.1rem 1.6rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.8px !important;
 }
 div.stButton > button[kind="secondary"]:hover {
     border-color: #ef4444 !important;
-    background: rgba(239, 68, 68, 0.22) !important;
+    background: rgba(239, 68, 68, 0.25) !important;
     color: #ffffff !important;
 }
 
 [data-testid="stCaptionContainer"] p, .stMarkdown p, label {
     color: #f1f5f9 !important;
-    font-size: 1.08rem !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
 }
 
 .result-danger {
-    background: linear-gradient(90deg, rgba(220, 38, 38, 0.28), rgba(127, 29, 29, 0.16));
-    border: 1px solid #ef4444;
-    border-left: 6px solid #ef4444;
-    padding: 1.2rem;
+    background: linear-gradient(90deg, rgba(220, 38, 38, 0.32), rgba(127, 29, 29, 0.18));
+    border: 1.5px solid #ef4444;
+    border-left: 8px solid #ef4444;
+    padding: 1.4rem;
     border-radius: 12px;
     color: #ffffff;
-    font-size: 1.15rem;
-    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .result-caution {
-    background: linear-gradient(90deg, rgba(245, 158, 11, 0.26), rgba(120, 53, 15, 0.14));
-    border: 1px solid #f59e0b;
-    border-left: 6px solid #f59e0b;
-    padding: 1.2rem;
+    background: linear-gradient(90deg, rgba(245, 158, 11, 0.3), rgba(120, 53, 15, 0.16));
+    border: 1.5px solid #f59e0b;
+    border-left: 8px solid #f59e0b;
+    padding: 1.4rem;
     border-radius: 12px;
     color: #fef3c7;
-    font-size: 1.15rem;
-    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .result-safe {
-    background: linear-gradient(90deg, rgba(16, 185, 129, 0.26), rgba(6, 78, 59, 0.14));
-    border: 1px solid #10b981;
-    border-left: 6px solid #10b981;
-    padding: 1.2rem;
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.3), rgba(6, 78, 59, 0.16));
+    border: 1.5px solid #10b981;
+    border-left: 8px solid #10b981;
+    padding: 1.4rem;
     border-radius: 12px;
     color: #d1fae5;
-    font-size: 1.15rem;
-    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .layers-strip {
-    margin-top: 2.5rem;
-    padding: 1.4rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 3rem;
+    padding: 1.6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
 }
 .layers-label {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #e2e8f0;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
 }
 .layers-logos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
     color: #ffffff;
-    font-weight: 800;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: 1.2px;
 }
 </style>
 
@@ -405,23 +410,23 @@ st.markdown("""
 .cyber-badge-box {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 22px;
-    border-radius: 35px;
-    border: 2px solid rgba(248, 113, 113, 0.8);
-    background: rgba(30, 4, 8, 0.9);
+    gap: 12px;
+    padding: 12px 26px;
+    border-radius: 40px;
+    border: 2px solid rgba(248, 113, 113, 0.85);
+    background: rgba(30, 4, 8, 0.92);
     backdrop-filter: blur(14px);
     color: #ffffff;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     font-weight: 900;
     letter-spacing: 2.5px;
-    box-shadow: 0 0 25px rgba(239, 68, 68, 0.45);
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
     animation: badgePulse 2.4s ease-in-out infinite;
 }
-@keyframes badgePulse { 0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,.55);} 50% { box-shadow: 0 0 0 12px rgba(239,68,68,0);} }
+@keyframes badgePulse { 0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,.6);} 50% { box-shadow: 0 0 0 14px rgba(239,68,68,0);} }
 
 .L-title {
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-weight: 900;
     line-height: 1.02;
     letter-spacing: 1.5px;
@@ -436,21 +441,21 @@ st.markdown("""
 @keyframes shimmer { to { background-position: 200% center; } }
 
 .L-pick {
-    font-size: 1.95rem;
+    font-size: 2.2rem;
     font-weight: 900;
     color: #ff5a6e;
-    margin: 1rem 0 0.6rem 0;
+    margin: 1rem 0 0.8rem 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: 0 0 28px rgba(239, 68, 68, 0.9);
+    text-shadow: 0 0 30px rgba(239, 68, 68, 0.95);
 }
 
 .L-desc {
     color: #f8fafc;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.45rem;
+    font-weight: 700;
     line-height: 1.75;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95);
 }
 
 .L-right { position: relative; flex: 1 1 440px; min-height: 480px; display: flex; justify-content: center; align-items: center; }
@@ -506,9 +511,9 @@ st.markdown("""
 }
 
 .chip {
-    position: fixed; z-index: 0; pointer-events: none; padding: 7px 15px;
+    position: fixed; z-index: 0; pointer-events: none; padding: 8px 16px;
     border: 1px solid rgba(248,113,113,.8); background: rgba(55,6,12,.82);
-    color: #fecaca; font-size: .85rem; font-weight: 800; letter-spacing: 1.8px;
+    color: #fecaca; font-size: 1rem; font-weight: 900; letter-spacing: 1.8px;
     border-radius: 6px; box-shadow: 0 0 18px rgba(239,68,68,.45);
     animation: chipFloat ease-in-out infinite;
 }
@@ -548,26 +553,27 @@ st.markdown("""
 @keyframes hudPulse { 0%,100% { opacity: .55; } 50% { opacity: 1; filter: drop-shadow(0 0 8px #ff2a44); } }
 
 .bg-ticker {
-    left: 0; bottom: 0; width: 100%; height: 36px; overflow: hidden; z-index: 3;
+    left: 0; bottom: 0; width: 100%; height: 38px; overflow: hidden; z-index: 3;
     background: rgba(25,4,8,.94); border-top: 1px solid rgba(248,113,113,.7);
 }
 .bg-ticker div {
-    display: inline-block; white-space: nowrap; line-height: 36px; color: #fecaca;
-    font-size: .9rem; font-weight: 800; letter-spacing: 2px; animation: tick 40s linear infinite;
+    display: inline-block; white-space: nowrap; line-height: 38px; color: #fecaca;
+    font-size: 1.05rem; font-weight: 900; letter-spacing: 2px; animation: tick 40s linear infinite;
 }
 @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 .intro-terminal-box {
     background: rgba(14, 3, 6, 0.96);
-    border: 1px solid rgba(248, 113, 113, 0.65);
+    border: 1.5px solid rgba(248, 113, 113, 0.7);
     border-radius: 14px;
-    padding: 1.5rem 1.8rem;
+    padding: 1.8rem 2rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: #fecaca;
-    line-height: 1.65;
-    box-shadow: inset 0 0 30px rgba(220, 38, 38, 0.16), 0 10px 30px rgba(0, 0, 0, 0.7);
-    margin: 1.8rem auto;
+    line-height: 1.7;
+    box-shadow: inset 0 0 35px rgba(220, 38, 38, 0.18), 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin: 2rem auto;
     max-width: 1100px;
     position: relative;
     z-index: 2;
@@ -576,39 +582,39 @@ st.markdown("""
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(248, 113, 113, 0.4);
-    padding-bottom: 0.6rem;
-    margin-bottom: 0.9rem;
+    border-bottom: 1.5px solid rgba(248, 113, 113, 0.45);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
     color: #ffffff;
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 900;
     letter-spacing: 1.5px;
 }
 .terminal-dots {
     display: flex;
-    gap: 6px;
+    gap: 8px;
 }
-.tdot { width: 12px; height: 12px; border-radius: 50%; }
+.tdot { width: 13px; height: 13px; border-radius: 50%; }
 .tdot.red { background: #ef4444; }
 .tdot.yellow { background: #f59e0b; }
 .tdot.green { background: #10b981; }
 
 .cyber-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.4rem;
     max-width: 1100px;
-    margin: 1.8rem auto;
+    margin: 2rem auto;
     position: relative;
     z-index: 2;
 }
 .cyber-stat-card {
     background: rgba(20, 5, 8, 0.92);
-    border: 1px solid rgba(248, 113, 113, 0.5);
-    border-radius: 12px;
-    padding: 1.4rem;
+    border: 1.5px solid rgba(248, 113, 113, 0.55);
+    border-radius: 14px;
+    padding: 1.6rem;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.7);
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .cyber-stat-card:hover {
@@ -616,31 +622,31 @@ st.markdown("""
     border-color: #ef4444;
 }
 .stat-num {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 900;
     color: #ffffff;
-    text-shadow: 0 0 15px rgba(239, 68, 68, 0.85);
-    margin-bottom: 0.25rem;
+    text-shadow: 0 0 18px rgba(239, 68, 68, 0.9);
+    margin-bottom: 0.3rem;
 }
 .stat-label {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1.4px;
     color: #f1f5f9;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .clean-banner {
     position: relative;
     z-index: 2;
     max-width: 1100px;
-    margin: 2rem auto 1.5rem auto;
-    height: 210px;
+    margin: 2.2rem auto 1.5rem auto;
+    height: 230px;
     border-radius: 20px;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(24, 7, 10, 0.95) 0%, rgba(12, 3, 5, 0.98) 100%);
-    border: 1.5px solid rgba(248, 113, 113, 0.55);
-    box-shadow: 0 0 45px rgba(239, 68, 68, 0.35);
+    border: 2px solid rgba(248, 113, 113, 0.6);
+    box-shadow: 0 0 50px rgba(239, 68, 68, 0.4);
 }
 .clean-banner-content {
     position: absolute;
@@ -649,17 +655,17 @@ st.markdown("""
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(239, 68, 68, 0.18) 0%, transparent 70%);
     padding: 1rem;
     z-index: 2;
 }
 .stat { text-align: center; color: #ffffff; }
-.stat b { display: block; font-size: 2.8rem; font-weight: 900; color: #ff5a6e; text-shadow: 0 0 18px rgba(239,68,68,.9); }
-.stat small { letter-spacing: 2px; color: #ffffff; font-weight: 800; font-size: .95rem; }
+.stat b { display: block; font-size: 3.2rem; font-weight: 900; color: #ff5a6e; text-shadow: 0 0 20px rgba(239,68,68,.95); }
+.stat small { letter-spacing: 2px; color: #ffffff; font-weight: 900; font-size: 1.1rem; }
 .scan-line {
     position: absolute; left: 0; width: 100%; height: 3px; z-index: 4;
     background: linear-gradient(90deg, transparent, #ff2a44, transparent);
-    box-shadow: 0 0 18px #ff2a44; animation: scan 3.2s linear infinite;
+    box-shadow: 0 0 20px #ff2a44; animation: scan 3.2s linear infinite;
 }
 @keyframes scan { from { top: 0; } to { top: 100%; } }
 
@@ -674,19 +680,19 @@ st.markdown("""
         padding: 1.5rem 0.2rem 1rem 0.2rem;
         gap: 1.2rem;
     }
-    .L-title { font-size: 3.5rem; }
-    .L-pick { font-size: 1.4rem; letter-spacing: 1px; }
-    .L-desc { font-size: 1.1rem; }
+    .L-title { font-size: 3.8rem; }
+    .L-pick { font-size: 1.6rem; letter-spacing: 1px; }
+    .L-desc { font-size: 1.25rem; }
     .L-right { min-height: 340px; }
     .L-robot { width: 240px; }
     .L-scene { width: 340px; height: 340px; }
     .L-ring, .L-ring.r2 { display: none; }
-    .clean-banner { height: auto; min-height: 190px; }
-    .stat b { font-size: 2.1rem; }
-    .stat small { font-size: 0.82rem; }
+    .clean-banner { height: auto; min-height: 200px; }
+    .stat b { font-size: 2.4rem; }
+    .stat small { font-size: 0.95rem; }
     .hero-container { padding: 1.6rem 1.4rem; }
-    .hero-title { font-size: 2.4rem; }
-    .hero-accent { font-size: 1.3rem; }
+    .hero-title { font-size: 2.6rem; }
+    .hero-accent { font-size: 1.4rem; }
     .hero-right { min-width: 100%; }
 }
 </style>
@@ -821,10 +827,10 @@ if st.session_state["page"] == "landing":
         '<div class="cyber-badge-box" style="margin-bottom:1.2rem;">● AI CYBERSECURITY DEFENSE SYSTEM</div>'
         '<div class="L-title">PhishTrace</div>'
         '<div class="L-pick">Multichannel Phishing Detection</div>'
-        '<div style="margin: 1rem 0 1.4rem 0;"><span class="cyber-badge-box" style="font-size:1.15rem; padding:12px 26px;">DETECT • PROTECT • PREVENT</span></div>'
+        '<div style="margin: 1rem 0 1.4rem 0;"><span class="cyber-badge-box" style="font-size:1.35rem; padding:14px 28px;">DETECT • PROTECT • PREVENT</span></div>'
         '<div class="L-desc">An AI-inspired cybersecurity defense platform engineered to neutralize phishing traps, '
         'expose deceptive links, evaluate password entropy, and inspect live inbox emails before threats strike.</div>'
-        '<div style="margin-top:1.5rem;"><span class="cyber-badge-box" style="font-size:0.95rem; padding:8px 18px;">FIREWALL ACTIVE</span></div>'
+        '<div style="margin-top:1.5rem;"><span class="cyber-badge-box" style="font-size:1.1rem; padding:10px 20px;">FIREWALL ACTIVE</span></div>'
         '</div>'
         '<div class="L-right">'
         '<div class="L-ring"></div><div class="L-ring r2"></div>'
